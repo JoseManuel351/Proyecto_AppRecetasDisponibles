@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+          <h1>Pagina de inicio de sesión
+            
+            </h1>
+           
+        </div>
+        <form action="/submit_registration" method="post">
+            <header id="titulo">
+                <div>
+                  <h2>    Inicio de sesión
+                    
+                    </h2>
+                   
+                </div>
+            <div class="form-item">
+              <label for="nombre">Ingresar usuario:</label>
+              <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="form-item">
+              <label for="password">Ingrese la contraseña:</label>
+              <input type="password" id="password" name="password">
+            </div>
+         
+          
+            <input type="submit" value="Siguiente"class="button-center">
+           <div class="no">
+        <p>Aun no tienes cuenta</p>  
+
+           </div>
+           
+           <DIV class="inicia">
+            <a href=" ">Registrate aqui</a>
+
+           </DIV>
+           
+
+          </form>
+          <div class="imagen-container">
+            <img src="/logo.jpg" alt="logo" width="200" height="50">
+        </div>
+        <div class="imagen-container2">
+            <img src="/logo.jpg" alt="logo" width="200" height="50">
+        </div>  
+           
+</body>
+</html>
