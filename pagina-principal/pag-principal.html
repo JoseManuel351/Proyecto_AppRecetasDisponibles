@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/233b0479ed.js" crossorigin="anonymous"></script>
+    <title>RecetasFácil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <div class="logo-container">
+            <i class="fa-solid fa-kitchen-set"></i>
+            <h2>RecetasFácil</h2>
+        </div>
+        <nav>
+            <ul> 
+                <li><a href="#">Cómo Funciona</a></li>
+                <li><a href="Inicio/Isesion.html">Iniciar sesión</a></li>
+                <li><a href="Inicio/Isesion.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img class="fondo" src="imagen/receta.jpg">
+
+        <section class="hero fade-in">
+            <h1>Planifica tus comidas con lo que ya tienes</h1>
+            <p>Ingresa los ingredientes de tu despensa y obtén un plan semanal de recetas personalizado en segundos.</p>
+            <div class="buttons">
+                <button class="btn-primario">Comenzar Ahora</button>
+                <button class="btn-secondario">Ver Demo</button>
+            </div>
+        </section>
+
+        <section class="how-it-works fade-in">
+            <h2>Cómo Funciona</h2>
+            <div class="steps">
+                <div class="step fade-in">
+                    <div class="icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3>1. Ingresa tus ingredientes</h3>
+                    <p>Enumera los ingredientes que tienes en tu despensa o refrigerador.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>2. Nuestro algoritmo trabaja</h3>
+                    <p>Nuestro sistema inteligente encuentra las mejores recetas para tus ingredientes.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3>3. Recibe tu plan semanal</h3>
+                    <p>Obtén un plan de comidas personalizado para toda la semana.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features fade-in">
+            <h2>Características Principales</h2>
+            <div class="feature-cards">
+                <div class="feature-card fade-in">
+                    <h3>Planificación Inteligente</h3>
+                    <p>Algoritmo que optimiza el uso de tus ingredientes disponibles.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <h3>Recetas Variadas</h3>
+                    <p>Acceso a una amplia base de datos de recetas para todos los gustos.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <h3>Personalización</h3>
+                    <p>Adapta los planes a tus preferencias dietéticas y alergias.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="free-trial fade-in">
+            <h2>Prueba RecetasFácil Gratis</h2>
+            <p>Regístrate ahora y obtén un plan semanal de prueba sin costo.</p>
+            <form class="trial-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn-primary">Comenzar Prueba Gratuita <span>&rarr;</span></button>
+            </form>
+            <p class="terms">Al registrarte, aceptas nuestros términos y condiciones.</p>
+        </section>
+        
+        <footer class="footer">
+            <p>© 2024 RecetasFácil. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Privacidad</a>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript para activar la animación al hacer scroll -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const fadeElements = document.querySelectorAll(".fade-in");
+
+        function handleScroll() {
+            fadeElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    element.classList.add("visible");
+                } else {
+                    element.classList.remove("visible");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Ejecuta al cargar la página
+    });
+    </script>
+</body>
+</html>
+
