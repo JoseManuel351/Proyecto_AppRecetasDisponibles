@@ -61,67 +61,73 @@ nav ul li a:hover {
     height: 670px;
     width: 1481px;
     margin: 0;
-    mask-image: linear-gradient(white 70%, transparent);
+    mask-image: linear-gradient(white 70%, transparent 90%);
 }
 
-.hero {
+.seccion1 {
     text-align: center;
     padding: 100px 20px;
 }
 
-.hero h1 {
+.seccion1 h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.hero p {
+.seccion1 p {
     font-size: 20px;
-    color: #666;
+    color: #000000;
     margin-bottom: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.buttons {
+.buton {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.btn-primario, .btn-secondario{
+.btn-primero{
     padding: 15px 30px;
     font-size: 16px;
-    border: none;
+    border: 1px solid #000000;
     cursor: pointer;
-    background-color: #000000;
-    color: #fff;
+    background-color: #F7DC6F;
+    color: #000000;
+    border-radius: 30px;
 }
 
-.btn-primario, .btn-secondario:hover{
-    background-color: #FFFFFF; 
-    color: #000000;         
+.btn-primero:hover{
+    background-color: #000000; 
+    color: #F7DC6F;         
     padding: auto 2px;       
-    border-radius: 8px;      
+    border-radius: 8px;   
+    border-radius: 30px;   
 }
 
-.how-it-works {
+.seccion2 {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
+    padding: 100px 20px;
+    background: linear-gradient(transparent, #F7DC6F 15%);
 }
 
-.how-it-works h2 {
-    font-size: 32px;
+.seccion2 h2 {
+    font-size: 42px;
     font-weight: bold;
     color: #333;
     margin-bottom: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-.steps {
+.pasos {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 150px;
 }
 
-.step {
+.paso {
     text-align: center;
     max-width: 200px;
 }
@@ -129,8 +135,8 @@ nav ul li a:hover {
 .icon {
     background-color: #333;
     color: #fff;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -139,38 +145,39 @@ nav ul li a:hover {
     margin: 0 auto 20px;
 }
 
-.step h3 {
+.paso h3 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.step p {
+.paso p {
     font-size: 14px;
     color: #666;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.features {
+.seccion3 {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f8f8f8;
 }
 
-.features h2 {
+.seccion3 h2 {
     font-size: 32px;
     font-weight: bold;
     color: #333;
     margin-bottom: 40px;
 }
 
-.feature-cards {
+.caracteristicas {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.feature-card {
+.caracteristica {
     background-color: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -180,45 +187,45 @@ nav ul li a:hover {
     text-align: left;
 }
 
-.feature-card h3 {
+.caracteristica h3 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.feature-card p {
+.caracteristica p {
     font-size: 14px;
     color: #666;
 }
 
-.free-trial {
+.seccion4 {
     text-align: center;
     padding: 60px 20px;
     background-color: #f4f4f4;
 }
 
-.free-trial h2 {
+.seccion4 h2 {
     font-size: 32px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.free-trial p {
+.seccion4 p {
     font-size: 18px;
     color: #666;
     margin-bottom: 30px;
 }
 
-.trial-form {
+.formulario {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.trial-form input[type="email"] {
+.formulario input[type="email"] {
     padding: 10px 15px;
     font-size: 16px;
     border: 1px solid #ddd;
@@ -226,7 +233,7 @@ nav ul li a:hover {
     width: 250px;
 }
 
-.trial-form button {
+.formulario button {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -239,16 +246,16 @@ nav ul li a:hover {
     gap: 5px;
 }
 
-.trial-form button span {
+.formulario button span {
     font-size: 18px;
 }
 
-.terms {
+.terminos {
     font-size: 14px;
     color: #888;
 }
 
-.footer {
+.ultimo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -258,13 +265,13 @@ nav ul li a:hover {
     color: #666;
 }
 
-.footer-links a {
+.ultimo_link a {
     text-decoration: none;
     color: #666;
     margin-left: 20px;
 }
 
-.footer-links a:hover {
+.ultimo_link a:hover {
     text-decoration: underline;
 }
 
