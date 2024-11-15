@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de Recetas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
+    <div class="logo-container">
+        <i class="icon">🍲</i>
+        <h2>Recetas</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Recetas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="ingredientes">
     <h1>Buscador de Recetas</h1>
     <input type="text" id="ingredientInput" placeholder="Ingresa un ingrediente">
     <button onclick="addIngredient()">Agregar Ingrediente</button>
@@ -25,6 +39,15 @@
     <div class="results">
         <p>Recetas encontradas:</p>
         <div id="recipeResults">No se encontraron recetas con los ingredientes seleccionados.</div>
+    </div>
+</div>
+
+<div class="ultimo">
+    <span>© 2024 Recetas</span>
+    <div class="ultimo_link">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Contacto</a>
     </div>
 </div>
 
