@@ -54,10 +54,7 @@ nav ul li a {
 
 /* Efecto hover para el menú */
 nav ul li a:hover {
-    background-color: #FFFFFF; 
-    color: #000000;         
-    padding: auto 2px;       
-    border-radius: 8px;      
+    text-decoration: underline;    
 }
 
 .fondo{
