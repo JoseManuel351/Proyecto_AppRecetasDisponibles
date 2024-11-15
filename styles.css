@@ -108,7 +108,7 @@ nav ul li a:hover {
 
 .seccion2 {
     text-align: center;
-    padding: 100px 20px;
+    padding: 90px 0px 30px 0px;
     background: linear-gradient(transparent, #F7DC6F 15%);
 }
 
@@ -148,33 +148,35 @@ nav ul li a:hover {
 .paso h3 {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     margin: 10px 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .paso p {
     font-size: 14px;
-    color: #666;
+    color: #464646;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .seccion3 {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 0px 100px 0px;
+    background: linear-gradient( #F7DC6F 80%, transparent);
 }
 
 .seccion3 h2 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bold;
     color: #333;
     margin-bottom: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .caracteristicas {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
 }
 
 .caracteristica {
@@ -183,7 +185,7 @@ nav ul li a:hover {
     border-radius: 8px;
     padding: 20px;
     max-width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
     text-align: left;
 }
 
@@ -192,6 +194,7 @@ nav ul li a:hover {
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .caracteristica p {
@@ -202,7 +205,6 @@ nav ul li a:hover {
 .seccion4 {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f4f4f4;
 }
 
 .seccion4 h2 {
@@ -260,14 +262,14 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #f8f8f8;
+    background-color: #000000;
     font-size: 14px;
-    color: #666;
+    color: #fff;
 }
 
 .ultimo_link a {
     text-decoration: none;
-    color: #666;
+    color: #fff;
     margin-left: 20px;
 }
 

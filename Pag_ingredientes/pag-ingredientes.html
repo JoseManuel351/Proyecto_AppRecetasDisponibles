@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Recetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Buscador de Recetas</h1>
+    <input type="text" id="ingredientInput" placeholder="Ingresa un ingrediente">
+    <button onclick="addIngredient()">Agregar Ingrediente</button>
+
+    <div class="selected-ingredients">
+        <p>Ingredientes seleccionados</p>
+        <ul id="ingredientList">
+            <li>No hay ingredientes seleccionados.</li>
+        </ul>
+    </div>
+
+    <button onclick="searchRecipes()">Buscar Recetas</button>
+
+    <div class="results">
+        <p>Recetas encontradas:</p>
+        <div id="recipeResults">No se encontraron recetas con los ingredientes seleccionados.</div>
+    </div>
+</div>
+
+<script src="ejecutar.js"></script>
+</body>
+</html>
