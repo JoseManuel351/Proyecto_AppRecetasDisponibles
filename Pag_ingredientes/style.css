@@ -58,38 +58,56 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.espacio {
+    background-color: #dec47d;
+    display: flex; /* Cambiado a flex para organizar mejor los elementos */
+    flex-direction: column; /* Acomoda los elementos en columnas */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    margin: 80px 80px;
+    padding: 70px 70px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombreado más destacado */
+    border: 2px solid #8b6b3a; /* Línea alrededor del contenedor */
+}
+
+.espacio > * {
+    margin-bottom: 20px; /* Separación entre los elementos */
+}
+
 .ingredientes {
-    width: 400px;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto; /* Centrar el contenedor en la pantalla */
-    margin-top: 40px;
-    margin-bottom: auto;
+    background-color: #dec47d; /* Mismo color que el contenedor principal */
+    border-radius: 10px; /* Bordes redondeados consistentes */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra igual al contenedor principal */
+    border: 2px solid #000000; /* Misma línea de borde */
+    margin: auto; /* Espaciado adecuado */
+    margin-bottom: 70px;
 }
 
 .ingredientes h1 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+    color: #8b6b3a; /* Color acorde con el diseño */
 }
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #8b6b3a; /* Línea de borde armonizada */
     border-radius: 4px;
     margin-bottom: 10px;
 }
+
 
 button {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: #000;
-    color: #fff;
+    background-color: #8b6b3a; /* Fondo armonizado */
+    color: #fff; /* Contraste adecuado */
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -97,23 +115,27 @@ button {
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #704c20; /* Efecto hover oscuro */
 }
 
 .selected-ingredients {
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #8b6b3a; /* Misma línea de borde */
     border-radius: 4px;
+    background-color: #f3e4c7; /* Color de fondo complementario */
     margin-bottom: 20px;
 }
 
 .selected-ingredients p {
     font-weight: bold;
+    color: #8b6b3a; /* Color armonizado */
 }
 
 .results {
     font-size: 16px;
+    color: #333; /* Color de texto legible */
 }
+
 
 .ultimo {
     display: flex;
@@ -135,3 +157,98 @@ button:hover {
 .ultimo_link a:hover {
     text-decoration: underline;
 }
+
+/* Contenedor del slider */
+.slider {
+    display: flex;
+    height: 27rem;
+    gap: 1rem;
+    padding: 10px 100px;
+    padding-bottom: 7%;
+    overflow: hidden;  /* Evitar que las imágenes se desborden */
+}
+
+/* Estilos para cada imagen del slider */
+.slider > div {
+    flex: 1;  /* Cada imagen ocupará el mismo espacio inicialmente */
+    border-radius: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  /* Las imágenes ocuparán completamente el espacio */
+    transition: flex 0.8s cubic-bezier(0.24, 0.4, 0.45, 1.4);  /* Transición suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);  /* Sombra para las imágenes */
+}
+
+/* Efecto hover que aumenta el tamaño de la imagen */
+.slider > div:hover {
+    flex: 3;  /* La imagen se expandirá al pasar el mouse */
+}
+
+/* Estilo para los enlaces y texto dentro del slider */
+.slider a {
+    text-decoration: none;
+}
+
+.slider h2 {
+    text-align: center;
+    margin-top: 200px;  /* Ajuste vertical según el tamaño de la imagen */
+    color: white;
+    font-size: 28px;
+    font-family: "Rubik", sans-serif;
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.recipe-result {
+    display: grid;
+    margin: 20px;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.recipe-result h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+

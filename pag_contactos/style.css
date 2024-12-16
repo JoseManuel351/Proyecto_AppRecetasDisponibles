@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la pantalla */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container i {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.logo-container h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;    
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto; /* Centra la sección verticalmente */
+}
+
+.contact-info, .contact-form {
+    width: 50%;
+    margin: auto auto;
+    font-size: large;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer.ultimo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000000;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+}
+  
+.ultimo_link a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.ultimo_link a:hover {
+    text-decoration: underline;
+}

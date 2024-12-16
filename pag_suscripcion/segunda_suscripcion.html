@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/233b0479ed.js" crossorigin="anonymous"></script>
+    <title>Formulario y Resumen</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }  
+
+        .container {
+        display: flex; /* Distribuye el contenido en fila */
+        justify-content: space-between; /* Espacia los elementos a los extremos */
+        align-items: center; /* Centra verticalmente los elementos */
+        background-color: #000000; /* Color de fondo negro */
+        }
+            /* Estilo del logo */
+        .logo-container {
+            display: flex; /* Organiza el logo y el texto en fila */
+            align-items: center; /* Centra verticalmente los elementos */
+            gap: 10px; /* Espacio entre el icono y el texto */
+            padding-left: 20px;
+        }
+
+        .logo-container i {
+            font-size: 24px; /* Tamaño del icono */
+            color: #FFFFFF; /* Color blanco */
+        }
+
+        .logo-container h2 {
+            font-size: 28px; /* Tamaño del texto */
+            font-weight: 300; /* Grosor de la fuente */
+            color: #FFFFFF; /* Color blanco */
+            margin: 12px 0px 10px 0px;
+            font-family: 'Times New Roman', Times, serif; /* Fuente específica */
+        }
+
+        /* Estilo del menú de navegación */
+        nav ul {
+            list-style: none; /* Elimina las viñetas de la lista */
+            display: flex; /* Coloca los elementos del menú en fila */
+            gap: 20px; /* Espacio entre los enlaces del menú */
+            margin: 12px 28px 10px 0px;
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: #FFFFFF; /* Color blanco */
+            font-size: 16px; /* Tamaño del texto */
+            font-family: 'Courier New', Courier, monospace; /* Fuente específica */
+            font-weight: 500; /* Grosor de la fuente */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+        }
+
+        body {
+        font-family: Arial, sans-serif; /* Fuente principal */
+        background-color: #f4f4f4; /* Color de fondo */
+        display: flex; /* Permite organizar el contenido verticalmente */
+        flex-direction: column; /* Organiza los elementos en columna */
+        min-height: 100vh; /* Garantiza que el cuerpo tenga al menos la altura de la pantalla */
+        }
+
+        .contenedor {
+            margin: auto auto;
+            display: flex;
+            gap: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section, .summary-section {
+            flex: 1;
+        }
+
+        .form-container {
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #333;
+        }
+
+        .summary-container {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-container h3 {
+            margin-top: 0;
+        }
+
+        .summary-container p {
+            margin: 5px 0;
+        }
+
+        .summary-container .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-group input, .form-container button {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo-container">
+            <i class="fa-solid fa-kitchen-set"></i>
+            <h2>RecetasFácil</h2>
+        </div>
+        <nav>
+            <ul> 
+                <li><a href="../Pag_secundaria/pag-secundaria.php">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <div class="form-section">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="card-number">Número de tarjeta</label>
+                    <input type="text" id="card-number" placeholder="xxxx xxxx xxxx xxxx">
+                </div>
+
+                <div class="form-group">
+                    <label for="card-name">Nombre y apellido</label>
+                    <input type="text" id="card-name" placeholder="Como figura en la tarjeta">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry-date">Fecha de vencimiento</label>
+                        <input type="text" id="expiry-date" placeholder="MM/AA">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">Código de seguridad</label>
+                        <input type="text" id="cvv" placeholder="CVV">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="button">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-section">
+            <div class="summary-container">
+                <h3>Resumen de suscripción</h3>
+                <p><strong>Plan:</strong> 3 meses</p>
+                <p><strong>Precio:</strong> <span class="price">$495 MXN</span></p>
+                <p id="subscription-dates"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Generar las fechas de suscripción
+        const today = new Date();
+        const startDate = today.toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
+
+        const endDate = new Date();
+        endDate.setMonth(today.getMonth() + 3); // Añadir 3 meses
+        const formattedEndDate = endDate.toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
+
+        // Insertar las fechas en el DOM
+        document.getElementById('subscription-dates').innerHTML = `
+            <strong>Vigencia:</strong> Desde ${startDate} hasta ${formattedEndDate}
+        `;
+    </script>
+</body>
+</html>

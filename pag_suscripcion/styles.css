@@ -1,0 +1,166 @@
+/* Establece valores predeterminados para márgenes, padding y caja de contenido */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    background-color: #f4f4f4; /* Color de fondo */
+    display: flex; /* Permite organizar el contenido verticalmente */
+    flex-direction: column; /* Organiza los elementos en columna */
+    min-height: 100vh; /* Garantiza que el cuerpo tenga al menos la altura de la pantalla */
+}
+
+/* Estilo del contenedor principal (header) */
+.container {
+    display: flex; /* Distribuye el contenido en fila */
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #000000; /* Color de fondo negro */
+}
+
+/* Estilo del logo */
+.logo-container {
+    display: flex; /* Organiza el logo y el texto en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre el icono y el texto */
+    padding-left: 20px;
+}
+
+.logo-container i {
+    font-size: 24px; /* Tamaño del icono */
+    color: #FFFFFF; /* Color blanco */
+}
+
+.logo-container h2 {
+    font-size: 28px; /* Tamaño del texto */
+    font-weight: 300; /* Grosor de la fuente */
+    color: #FFFFFF; /* Color blanco */
+    margin: 12px 0px 10px 0px;
+    font-family: 'Times New Roman', Times, serif; /* Fuente específica */
+}
+
+/* Estilo del menú de navegación */
+nav ul {
+    list-style: none; /* Elimina las viñetas de la lista */
+    display: flex; /* Coloca los elementos del menú en fila */
+    gap: 20px; /* Espacio entre los enlaces del menú */
+    margin: 12px 8px 10px 0px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #FFFFFF; /* Color blanco */
+    font-size: 16px; /* Tamaño del texto */
+    font-family: 'Courier New', Courier, monospace; /* Fuente específica */
+    font-weight: 500; /* Grosor de la fuente */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
+
+/* Contenedor principal del contenido */
+.contenedor {
+    flex-grow: 1; /* Ocupa el espacio restante entre el header y footer */
+    text-align: center; /* Centra el texto */
+    padding: 90px 20px; /* Espaciado interno superior e inferior */
+}
+
+h1 {
+    font-size: 2em; /* Tamaño del título principal */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para la sección de planes de suscripción */
+.plans {
+    display: flex; /* Organiza los planes en fila */
+    justify-content: center; /* Centra los planes horizontalmente */
+    gap: 30px; /* Espacio entre los planes */
+}
+
+.plan {
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 18px; /* Espaciado interno */
+    width: 400px; /* Ancho del plan */
+    text-align: center; /* Centra el texto */
+    transition: transform 0.3s; /* Efecto de transición al hacer hover */
+}
+
+.plan:hover {
+    transform: scale(1.05); /* Agranda el plan ligeramente al pasar el cursor */
+}
+
+/* Estilo de los títulos dentro de cada plan */
+h2 {
+    margin-bottom: 10px; /* Espacio inferior */
+    font-size: 1.5em; /* Tamaño del título */
+}
+
+.subtitle {
+    color: #777; /* Color gris para subtítulos */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.price {
+    font-size: 2em; /* Tamaño del precio */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color oscuro */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Estilo de la lista de características */
+ul {
+    list-style: none; /* Elimina viñetas de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0 0 20px 0; /* Espaciado inferior */
+}
+
+li {
+    margin: 10px 0; /* Espaciado vertical entre elementos de la lista */
+    color: #333; /* Color oscuro */
+}
+
+/* Botones dentro de los planes */
+button {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s; /* Efecto de transición al cambiar color */
+}
+
+button:hover {
+    background-color: #444; /* Cambia a un gris más claro al pasar el cursor */
+}
+
+/* Estilo del footer */
+footer.ultimo {
+    display: flex; /* Organiza el contenido del footer en fila */
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px 40px; /* Espaciado interno */
+    background-color: #000000; /* Color de fondo negro */
+    font-size: 14px; /* Tamaño del texto */
+    color: #fff; /* Color del texto blanco */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: auto; /* Mantiene el footer pegado abajo */
+}
+    
+.ultimo_link a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Color blanco */
+    margin-left: 20px; /* Espacio a la izquierda entre los enlaces */
+}
+
+.ultimo_link a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}

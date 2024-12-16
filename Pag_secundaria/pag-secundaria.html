@@ -16,22 +16,22 @@
         </div>
         <nav>
             <ul> 
-                <li><a href="/Pag_secundaria/pag-secundaria.html">Inicio</a></li>
-                <li><a href="/Pag_ingredientes/pag-ingredientes.html">Recetas</a></li>
-                <li><a href="/pag_principal/pag-principal.html">Cerrar sesión</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="../Pag_secundaria/pag-secundaria.html">Inicio</a></li>
+                <li><a href="../pag_contactos/pag_contactos.html">Contacto</a></li>
+                <li><a href="../Pag_ingredientes/pag-ingredientes.html">Recetas</a></li>
+                <li><a href="../cerrar_sesion.html">Cerrar sesión</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <img class="fondo" src="/imagen/receta.jpg">
+        <img class="fondo" src="../imagen/receta.jpg">
 
         <section class="seccion1 fade-in">
             <h1>Planifica tus comidas con lo que ya tienes</h1>
             <p>Ingresa los ingredientes de tu despensa y obtén un plan semanal de recetas personalizado en segundos.</p>
             <div class="buton">
-                <button class="btn-primero">Comenzar Ahora</button>
+                <button class="btn-primero" onclick="location.href='../Pag_ingredientes/pag-ingredientes.html'">Comenzar aqui</button>
             </div>
         </section>
 
@@ -79,22 +79,12 @@
                 </div>
             </div>
         </section>
-        
-        <section class="seccion4 fade-in">
-            <h2>Prueba RecetasFácil Gratis</h2>
-            <p>Regístrate ahora y obtén un plan semanal de prueba sin costo.</p>
-            <form class="formulario">
-                <input type="email" placeholder="Tu correo electrónico" required>
-                <button type="submit" class="btn-primary">Comenzar Prueba Gratuita <span>&rarr;</span></button>
-            </form>
-            <p class="terminos">Al registrarte, aceptas nuestros términos y condiciones.</p>
-        </section>
-        
+    
         <footer class="ultimo">
             <p>© 2024 RecetasFácil. Todos los derechos reservados.</p>
             <div class="ultimo_link">
-                <a href="#">Términos de Servicio</a>
-                <a href="#">Privacidad</a>
+                <a href="../Terminos y Privacidad/terminos_servicio.html">Términos de Servicio</a>
+                <a href="../Terminos y Privacidad/privacidad.html">Privacidad</a>
             </div>
         </footer>
 

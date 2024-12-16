@@ -87,29 +87,32 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20px;
 }
-
-.btn-primero{
+.btn-primero {
     padding: 15px 30px;
     font-size: 16px;
     border: 1px solid #000000;
     cursor: pointer;
-    background-color: #F7DC6F;
-    color: #000000;
+    background-color: #F7DC6F; /* Fondo amarillo */
+    color: #000000; /* Texto negro */
     border-radius: 30px;
 }
 
-.btn-primero:hover{
-    background-color: #000000; 
-    color: #F7DC6F;         
-    padding: auto 2px;       
-    border-radius: 8px;   
-    border-radius: 30px;   
+.btn-primero:hover {
+    background-color: #000000; /* Fondo negro al pasar el ratón */
+    color: #F7DC6F; /* Texto amarillo */
+    border-radius: 30px; /* Mantiene el borde redondeado */
+}
+
+.btn-primero a {
+    color: inherit; /* Hereda el color del texto del botón */
+    text-decoration: none; /* Sin subrayado */
+    background-color: transparent; /* Sin fondo para el enlace */
 }
 
 .seccion2 {
     text-align: center;
     padding: 90px 0px 30px 0px;
-    background: linear-gradient(transparent, #F7DC6F 15%);
+    background: linear-gradient(transparent, #F7DC6F );
 }
 
 .seccion2 h2 {
@@ -161,8 +164,7 @@ nav ul li a:hover {
 
 .seccion3 {
     text-align: center;
-    padding: 40px 0px 100px 0px;
-    background: linear-gradient( #F7DC6F 80%, transparent);
+    padding: 100px 0px 100px 0px;
 }
 
 .seccion3 h2 {
@@ -200,61 +202,6 @@ nav ul li a:hover {
 .caracteristica p {
     font-size: 14px;
     color: #666;
-}
-
-.seccion4 {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.seccion4 h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.seccion4 p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.formulario {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.formulario input[type="email"] {
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 250px;
-}
-
-.formulario button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #333;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.formulario button span {
-    font-size: 18px;
-}
-
-.terminos {
-    font-size: 14px;
-    color: #888;
 }
 
 .ultimo {

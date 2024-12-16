@@ -17,41 +17,77 @@
     <nav>
         <ul>
             <li><a href="/Pag_secundaria/pag-secundaria.html">Inicio</a></li>
-            <li><a href="/Pag_ingredientes/pag-ingredientes.html">Recetas</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="../pag_contactos/pag_contactos.html">Contacto</a></li>
             <li><a href="/pag_principal/pag-principal.html">Cerrar sesión</a></li>
         </ul>
     </nav>
 </div>
 
-<div class="ingredientes">
-    <h1>Buscador de Recetas</h1>
-    <input type="text" id="ingredientInput" placeholder="Ingresa un ingrediente">
-    <button onclick="addIngredient()">Agregar Ingrediente</button>
-
-    <div class="selected-ingredients">
-        <p>Ingredientes seleccionados</p>
-        <ul id="ingredientList">
-            <li>No hay ingredientes seleccionados.</li>
-        </ul>
+    <!-- Recetas destacadas -->
+    <h2 style=" text-align: center; font-family:Georgia, 'Times New Roman', Times, serif; margin-top: 100px; font-size: 40px;">Recetas Destacadas</h2>
+    <div class="slider">
+        <div style="background-image:url(../imagen/pastaCarbonara.jpg);" onclick="openRecipeModal('Pasta Carbonara')">
+            <a><h2>Pasta Carbonara</h2></a>
+        </div>
+        <div style="background-image:url(../imagen/ensaladaCesar.jpg);" onclick="openRecipeModal('Ensalada César')">
+            <a><h2>Ensalada César</h2></a>
+        </div>
+        <div style="background-image:url(../imagen/tacoalPastor.jpg);" onclick="openRecipeModal('Tacos al Pastor')">
+            <a><h2>Tacos al Pastor</h2></a>
+        </div>
+        <div style="background-image:url(../imagen/chilaquilesVerdes.jpg);" onclick="openRecipeModal('Chilaquiles Verdes')">
+            <a><h2>Chilaquiles Verdes</h2></a>
+        </div>
+        <div style="background-image:url(../imagen/sopitos.jpg);" onclick="openRecipeModal('Sopitos')">
+            <a><h2>Sopitos</h2></a>
+        </div>
+        <div style="background-image:url(../imagen/papasQueso.jpg);" onclick="openRecipeModal('Papas Gratinadas De Queso')">
+            <a><h2>Papas Gratinadas De Queso</h2></a>
+        </div>
     </div>
 
-    <button onclick="searchRecipes()">Buscar Recetas</button>
-
-    <div class="results">
-        <p>Recetas encontradas:</p>
-        <div id="recipeResults">No se encontraron recetas con los ingredientes seleccionados.</div>
+    <div class="ingredientes">
+        <h1>Buscador de Recetas</h1>
+        <input type="text" id="ingredientInput" placeholder="Ingresa un ingrediente">
+        <button onclick="addIngredient()">Agregar Ingrediente</button>
+        <button onclick="clearIngredients()">Eliminar Ingredientes</button>
+    
+        <div class="selected-ingredients">
+            <p>Ingredientes seleccionados</p>
+            <ul id="ingredientList">
+                <li>No hay ingredientes seleccionados.</li>
+            </ul>
+        </div>
+    
+        <button onclick="searchRecipes()">Buscar Recetas</button>
+    
+        <div class="results">
+            <p>Recetas encontradas:</p>
+            <div id="recipeResults">No se encontraron recetas con los ingredientes seleccionados.</div>
+        </div>
     </div>
+
+    <!-- Modal para mostrar detalles de la receta -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalRecipeName"></h2>
+            <img id="modalRecipeImage" src="" alt="Imagen de la receta" style="width: 100%; height: auto; margin-bottom: 20px;">
+            <h3>Ingredientes:</h3>
+            <ul id="modalRecipeIngredients"></ul>
+            <h3>Pasos para la preparación:</h3>
+            <ol id="modalRecipeSteps"></ol>
+        </div>
+    </div>
+
 </div>
 
 <div class="ultimo">
     <span>© 2024 Recetas</span>
     <div class="ultimo_link">
-        <a href="#">Privacidad</a>
-        <a href="#">Términos</a>
-        <a href="#">Contacto</a>
+        <a href="../Terminos y Privacidad/terminos_servicio.html">Términos de servicio</a>
+        <a href="../Terminos y Privacidad/privacidad.html">Privacidad</a>
     </div>
-</div>
 
 <script src="ejecutar.js"></script>
 </body>
